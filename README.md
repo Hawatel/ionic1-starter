@@ -1,4 +1,4 @@
-## Hawatel Production React Starter
+## Ionic 1 Starter Kit
 
 > <b>:star2: Ionic 1 Starter Kit</b> is a boilerplate which helps you build fast and efficient mobile apps. This is a good place to start your project, or any other project what you need to develop. The boilerplate is built on top of [Node.js](https://nodejs.org/), [Ionic 1.x](http://ionicframework.com/) and [Angular 1.x](https://angularjs.org/). For a development process the <b>Starter Kit</b> uses modern development tools such as [Webpack](http://webpack.github.io/), [Babel](http://babeljs.io/) and [Webpack hot reloading](https://github.com/glenjamin/webpack-hot-middleware).
 
