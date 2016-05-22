@@ -1,0 +1,23 @@
+:local(.local) {
+  //background-color: yellow;
+
+  ion-content {
+
+  }
+
+  .md-scroll-mask { position: initial;} //https://github.com/angular/material/issues/8236
+
+  .row {
+    padding:0px !important;
+  }
+
+  .button-full {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+}

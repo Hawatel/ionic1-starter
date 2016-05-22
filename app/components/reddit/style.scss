@@ -1,0 +1,50 @@
+:local(.local) {
+  @import "../../assets/scss/variables";
+  //background-color: yellow;
+
+  ion-content {
+
+  }
+
+  .col {
+      margin: 0;
+      padding: 0;
+  }
+
+  .opts {
+      background-color: $dark;
+  }
+
+  .list .item.item-input {;
+    border: none;
+    height: 46px;
+    width: 150px;
+  }
+
+  .item-select select {
+      padding-left: 0;
+  }
+
+  .item-select select, .input-label {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .item.item-toggle {
+    border: none;
+    background-color: $dark;
+    color: white;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .toggle-small.item-toggle .toggle {
+    top: 15px;
+  }
+
+  .item-toggle, .item-toggle.item-complex .item-content {
+    padding-right: 74px;
+  }
+}

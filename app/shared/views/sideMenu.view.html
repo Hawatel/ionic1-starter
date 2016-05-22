@@ -1,0 +1,86 @@
+<ion-side-menus enable-menu-with-back-views="false"> <!-- main wrapper for menues -->
+  <ion-side-menu-content> <!-- current content, what will be seen after pressing a desired menu -->
+    <ion-nav-bar align-title="left" class="bar-positive"> <!-- top bar, when the application state changes the top bar state will update-->
+
+      <ion-nav-back-button class="button-clear"> <!-- the back button which will appear when the user is able to go back in the current navigation stack -->
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left"> <!-- button expanding menu -->
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+
+      <ion-nav-buttons side="right">
+        <a class="button button-icon button-clear ion-gear-a" href="#/app/settings">
+        </a>
+      </ion-nav-buttons>
+
+    </ion-nav-bar>
+
+    <ion-nav-view name="menuContent"></ion-nav-view> <!-- this is the place where templates will be rendered -->
+
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left"> <!-- it is something like ion-nav-bar but for side menu.
+                              It means that when side menu appear there will be visible top bar with Menu title -->
+    <ion-header-bar align-title="left" class="bar-dark">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+      <ion-list>
+        <ion-item class="item item-icon-left item-dark" menu-close href="#/app/home">
+          <i class="icon ion-android-home"></i>
+          HOME
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-dark" menu-close href="#/app/location">
+          <i class="icon ion-android-locate"></i>
+          Location
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-dark" menu-close href="#/app/reddit">
+          <i class="icon ion-social-reddit-outline"></i>
+          Reddit
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-dark" menu-close href="#/app/eonet">
+          <i class="icon ion-android-search"></i>
+          EONET
+          <i class="item-note">
+            Event Tracker
+          </i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-dark" menu-close href="#/app/earth">
+          <i class="icon ion-android-globe"></i>
+          EARTH
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right item-dark" menu-close href="#/app/mars">
+          <i class="icon ion-planet"></i>
+          MARS
+          <i class="icon ion-android-cloud-outline"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-dark" menu-close href="#/app/patents">
+          <i class="icon ion-android-bulb"></i>
+          PATENTS
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-dark" menu-close href="#/app/sounds">
+          <i class="icon ion-music-note"></i>
+          SOUNDS
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-dark" menu-close href="#/app/trek">
+          <i class="icon ion-android-walk"></i>
+          TREK
+        </ion-item>
+      </ion-list>
+
+    </ion-content>
+
+  </ion-side-menu>
+</ion-side-menus>

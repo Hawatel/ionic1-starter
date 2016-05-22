@@ -1,0 +1,47 @@
+<ion-view ng-class="styles.local" view-title="Reddit">
+  <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="loadNewerStories()">
+    </ion-refresher>
+
+    <div class="row opts">
+      <div class="list col">
+        <label class="item item-input item-select item-dark">
+          <div class="input-label">
+            Channel
+          </div>
+          <select ng-model="reddit.channel" ng-change="loadNewStories()">
+            <option value="all" selected>All</option>
+            <option value="funny">Funny</option>
+            <option value="ionic">Ionic</option>
+          </select>
+        </label>
+      </div>
+
+    <div class="col">
+      <ion-toggle ng-model="reddit.browserMode" toggle-class="toggle-balanced">System browser</ion-toggle>
+    </div>
+  </div>
+
+    <div class="list">
+
+      <a ng-repeat="story in stories track by story.id"
+        class="item item-thumbnail-left"
+        ng-click="goToLink(story.url)">
+
+        <img
+          ng-src="{{hasTumbnail(story.thumbnail) ? story.thumbnail : img.redditLogo}}"
+          img-preloading
+          default-image="{{img.spinner}}"
+          />
+        <h2>{{story.title}}</h2>
+        <p><strong>{{story.author}}</strong> - {{story.domain | delString:'self.'}}</p>
+        <p>{{story.created_utc * 1000 | date:'yyyy-MM-dd HH:mm:ss'}}</p>
+      </a>
+    </div>
+    <ion-infinite-scroll
+      on-infinite="loadOlderStories()" distance="1%">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,10 @@
+// sass variables which override ionic's variables
+@import "variables";
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "~ionic-sdk/release/fonts" !default;
+
+@import "ionic.app";
+
+// Include all of Ionic
+@import "~ionic-sdk/scss/ionic";

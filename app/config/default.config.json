@@ -1,0 +1,35 @@
+{
+    "ionic": {
+      "cache": {
+          "views": 10,
+          "forward": false
+      },
+      "view": {
+        "backButton": {
+          "text": "",
+          "previousTitleText": ""
+        },
+        "jsScrolling": false
+      }
+    },
+    "googleMaps": {
+      "map": {
+        "id": "map",
+        "zoom": 15,
+        "type": "google.maps.MapTypeId.ROADMAP",
+        "latLng": { "lat": 52.229837, "lng": 21.011734 }
+      },
+      "currentPosOpts": {
+        "timeout": 10000,
+        "enableHighAccuracy": false
+      },
+      "watchPosOpts": {
+        "maximumAge": 0,
+        "timeout": 3000,
+        "enableHighAccuracy": false
+      }
+    },
+    "reddit": {
+      "apiUrl": "https://www.reddit.com"
+    }
+}
