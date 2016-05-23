@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "5.11"
+  - "4.2"
+before_script:
+  - npm install -g cordova@6.1.1
+  - npm install -g ionic@1.7.14
+  - ionic state restore
