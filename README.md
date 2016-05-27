@@ -43,7 +43,7 @@
 $ git clone https://github.com/Hawatel/ionic1-starter.git
 $ npm install
 $ sudo npm install -g cordova@6.1.1
-$ sudo npm install -g ionic@1.7.14
+$ sudo npm install -g ionic@1.7.15
 $ ionic state restore
 ```
 

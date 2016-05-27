@@ -13,11 +13,25 @@
       }
     },
     "googleMaps": {
+      "sdk": {
+        "apiKey": false,
+        "url": "https://maps.googleapis.com/maps/api/js",
+        "sensor": true,
+        "callBack": "mapInit"
+      },
       "map": {
         "id": "map",
         "zoom": 15,
         "type": "google.maps.MapTypeId.ROADMAP",
         "latLng": { "lat": 52.229837, "lng": 21.011734 }
+      },
+      "marker": {
+        "animation": "google.maps.Animation.DROP",
+        "defaultMarkers": [
+          { "position": {"lat": "52.227806", "lng": "21.002025" }, "title": "Warsaw Center"},
+          { "position": {"lat": "52.517083", "lng": "13.388629" }, "title": "Berlin Center"},
+          { "position": {"lat": "37.777250", "lng": "-122.419711" }, "title": "San Francisco Center"}
+        ]
       },
       "currentPosOpts": {
         "timeout": 10000,
