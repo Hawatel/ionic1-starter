@@ -6,6 +6,7 @@ import modConstant from './config/constant.mod';
 import configRun from './config/run.config';
 import configRouter from './config/router.config';
 import configIonic from './config/ionic.config';
+import facConnMonitor from './shared/factories/connectivityMonitor.factory';
 
 /* my modules */
 /*********************my modules*************************/
@@ -24,4 +25,5 @@ let app = angular.module('app', [
 /* set up configuration */
 app.config(configRouter);
 app.config(configIonic);
+app.factory('ConnectivityMonitor', facConnMonitor);
 app.run(configRun);

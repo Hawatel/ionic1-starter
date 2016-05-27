@@ -84,7 +84,8 @@
     "ionic-plugin-keyboard",
     "cordova-plugin-geolocation",
     "cordova-plugin-inappbrowser",
-    "cordova.plugins.diagnostic"
+    "cordova-plugin-network-information",
+    "cordova.plugins.diagnostic@2.3.17"
   ],
   "cordovaPlatforms": [
     "android",
