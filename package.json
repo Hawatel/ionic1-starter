@@ -11,7 +11,8 @@
     "production": "rm -rf www/* && webpack --release --config webpack/prod.config.js && ionic serve",
     "android": "rm -rf www/* && webpack --release --config webpack/prod.config.js && ionic run android",
     "ios": "rm -rf www/* && webpack --release --config webpack/prod.config.js && ionic run ios",
-    "test": "karma start"
+    "test": "karma start",
+    "doc": "esdoc -c ./.esdoc.json"
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,8 @@
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
     "deep-extend": "^0.4.1",
+    "esdoc": "^0.4.7",
+    "esdoc-es7-plugin": "0.0.3",
     "file-loader": "^0.8.1",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^1.5.0",

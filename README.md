@@ -23,6 +23,7 @@
 - [cordova](https://cordova.apache.org/)
 - [babeljs](https://babeljs.io/)
 - [deep-extend](https://github.com/unclechu/node-deep-extend)
+- [esdoc](https://esdoc.org/)
 - [file-loader](https://github.com/webpack/file-loader)
 - unit testing ([karma](https://karma-runner.github.io/0.13/index.html) [chai](http://chaijs.com/) [mocha](https://mochajs.org/) [phantomjs](http://phantomjs.org/))
 - [html-loader](https://github.com/webpack/html-loader)
@@ -57,6 +58,7 @@ $ ionic state restore
 |`npm run production`|Start production server on `localhost:8100`|
 |`npm run android`|Runs the application on a real devise or on an emulator|
 |`npm run ios`|Runs the application on a real devise or on an emulator|
+|`npm run doc`|Generate an ESDoc documentation|
 
 ## Structure
 
