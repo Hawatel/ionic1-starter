@@ -35,7 +35,9 @@ module.exports = (config) => {
           { test: /\.html$/, loader: 'html' },
           { test: /\.json$/, loader: 'json' },
           { test: /\.css$/,  loader: 'style!css' },
-          { test: /\.scss$/, loader: 'style!css!postcss-loader!sass' }
+          { test: /\.scss$/, loader: 'style!css!postcss-loader!sass' },
+          { test: [/.svg/, /.eot/, /.ttf/, /.woff/, /.woff2/], loader: 'file?name=fonts/[name].[ext]' },
+          { test: /\.(png|jpg|svg)$/, loader: 'file?name=img/[name].[ext]' }
         ],
         postLoaders: [{
           test: /\.js/,
