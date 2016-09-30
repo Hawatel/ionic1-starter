@@ -8,8 +8,12 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
+    <!-- a file is created by webpack (webpack/dll.config.js) -->
+    <script src="dll.vendor.js"></script>
+
   </head>
-  <body ng-strict-di ng-app="app">
+  <!-- todo: ng-annotate does not work if devtool 'eval' is enabled so that I cannot use ng-strict-di attribute -->
+  <body ng-app="app">
     <ion-nav-view></ion-nav-view>
     {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
     <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>

@@ -7,3 +7,6 @@ plugins/
 coverage/
 docs/
 .idea/
+.happypack/
+.vendor-dll-manifest.json
+npm-debug.log
