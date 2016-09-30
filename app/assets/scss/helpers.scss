@@ -1,0 +1,102 @@
+.bg-default-primary {
+  background-color: $background-color !important;
+
+  &.bg-hover {
+    background-color: $background-color-secondary !important;
+  }
+}
+
+.bg-default-secondary {
+  background-color: $background-color-secondary !important;
+
+  &.bg-hover {
+    background-color: $background-color !important;
+  }
+}
+
+
+.bg-primary {
+  background-color: $primary-color !important;
+
+  &.bg-hover {
+    background-color: $secondary-color !important;
+  }
+}
+
+.bg-secondary {
+  background-color: $secondary-color !important;
+
+  &.bg-hover {
+    background-color: $primary-color !important;
+  }
+}
+
+.bg-accent {
+  background-color: $accent-color !important;
+
+  &.bg-hover {
+    background-color: $accent-text-color !important;
+  }
+}
+
+.bg-accent-secondary {
+  background-color: $accent-text-color !important;
+
+  &.bg-hover {
+    background-color: $accent-color !important;
+  }
+}
+
+.bg-label {
+  background-color: $label-color !important;
+
+  &.bg-hover {
+    background-color: $label-color-secondary !important;
+  }
+}
+
+.bg-label-secondary {
+  background-color: $label-color-secondary !important;
+
+  &.bg-hover {
+    background-color: $label-color !important;
+  }
+}
+
+
+.c {
+  color: $background-color !important;
+}
+
+.c-primary {
+  color: $primary-color !important;
+}
+
+.c-secondary {
+  color: $secondary-color !important;
+}
+
+.c-accent {
+  color: $accent-color !important;
+}
+
+.c-label {
+  color: $label-color !important;
+}
+
+.c-label-secondary {
+  color: $label-color-secondary !important;
+}
+
+.clear-space {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.block {
+  display: block;
+}

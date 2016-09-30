@@ -6,3 +6,4 @@ platforms/
 plugins/
 coverage/
 docs/
+.idea/

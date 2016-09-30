@@ -1,10 +1,24 @@
-// sass variables which override ionic's variables
-@import "variables";
-
 // The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "~ionic-sdk/release/fonts" !default;
+$ionicons-font-path: '~ionic-sdk/release/fonts' !default;
 
-@import "ionic.app";
+$primary-color: #283593;
+$secondary-color: #f8f8f8;
+$accent-color: #e57373;
+$accent-text-color: #7986cb;
+$background-color: #7f5f5f;
+$background-color-secondary: #a1887f;
+$label-color: #fff;
+$label-color-secondary: #000;
+$positive: $primary-color;
+
+$font-family-sans-serif: "Roboto", '-apple-system', "Helvetica Neue", "Segoe UI", sans-serif !default;
+$font-family-light-sans-serif: "Roboto-Light", '-apple-system', "HelveticaNeue-Light", "Segoe UI-Light", sans-serif-light !default;
+
+$element-divider-top-space: 44px;
+
+// sass variables which override ionic's variables
+@import 'variables';
 
 // Include all of Ionic
-@import "~ionic-sdk/scss/ionic";
+@import '~ionic-sdk/scss/ionic';
+@import './helpers';
