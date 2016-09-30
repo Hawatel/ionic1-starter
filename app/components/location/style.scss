@@ -1,5 +1,6 @@
+@import '../../assets/scss/index';
+
 :local(.local) {
-  //background-color: yellow;
 
   ion-content {
 
@@ -8,7 +9,7 @@
   .md-scroll-mask { position: initial;} //https://github.com/angular/material/issues/8236
 
   .row {
-    padding:0px !important;
+    padding:0 !important;
   }
 
   .button-full {
